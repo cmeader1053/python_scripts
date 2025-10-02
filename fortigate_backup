@@ -2,7 +2,8 @@
 Script Name:  fortinet_backup.py
 Description:  Python script to automate full config backups of fortinet firewalls and save backup file to designated located. 
 Directions:   Run script and enter information as prompted - Firewall IP, username, password, ssh port
-Overview:     Script leverages netmiko library to form ssh tunnel to firewall utilizing information provided to prompts. User interaction is required for successful execution.
+Overview:     Script leverages netmiko library to form ssh tunnel to firewall utilizing information provided to prompts. 
+              User interaction is required for successful execution.
 """
 
 from netmiko import ConnectHandler
