@@ -1,8 +1,13 @@
 """
 Script Name:  fortinet_backup_v2.py
-Description:  Update to Fortinet firewall backup script to leverage a REST API Admin to connect to the firewall and execute config backup command
-Directions:   Scripts requires a REST API token generated from the firewall. This includes creating a REST API Admin profile with appropriate permissions, creating a REST API Admin user associated with the previously created REST API admin profile and setting trusted host. 
-Updates:      Removed netmiko library and prompts for username/password. Added Requests library for HTTP client and adjusted code to leverage library. Adjusted prompts for just IP of firewall and port used to access GUI of firewall (HTTPS port). 
+Description:  Update to Fortinet firewall backup script to leverage a REST API Admin to connect to the firewall and 
+              execute config backup command
+Directions:   Scripts requires a REST API token generated from the firewall. This includes creating a REST API Admin profile 
+              with appropriate permissions, creating a REST API Admin user associated with the previously created REST API 
+              admin profile and setting trusted host. 
+Updates:      Removed netmiko library and prompts for username/password. Added Requests library for HTTP client and adjusted 
+              code to leverage library. Adjusted prompts for just IP of firewall and port used to access GUI of firewall 
+              (HTTPS port). 
 
 NOTE:  This version of the script requires a hard code of the API Token generated from the Fortinet. 
 """
