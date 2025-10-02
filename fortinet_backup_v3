@@ -1,6 +1,14 @@
-""""
-
-
+"""
+Script Name:  fortinet_backup_v3.py
+Description:  Update to Fortinet firewall backup script to be able to access and drop backup file to an existing S3 bucket. 
+              The script will still save the backup file to a local file path as well.
+Directions:   Script requires a REST API token (see v2 script for directions) and previously created S3 bucket in AWS. 
+              To access the S3 bucket, this requires the creation of an IAM user with permissions to drop objects into the 
+              bucket and possibly KMS permissions to handle the encryption. Aditionally, you will need to generate access an 
+              secret keys for the IAM user which confogured as environment variables on the local host where the script 
+              executes. 
+Updates:      Requires the use of environment variables configured on host. Adds boto3 to access S3 bucket and drop object 
+              into bucket.  
 """
 import pwinput
 import datetime
